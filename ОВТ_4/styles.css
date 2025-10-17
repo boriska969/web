@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: rgb(33, 40, 52);
+  background: rgba(211, 211, 211, 0.2);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.header {
+  background: rgb(33, 40, 52);
+  color: white;
+  
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav__link {
+  color: white;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.nav__link:hover {
+  background: gray;
+}
+
+.card {
+  background: white;
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 16px 0;
+}
+
+.footer {
+  border-top: 1px solid lightgray;
+  background: white;
+  margin-top: 16px;
+}
+
+.footer__inner {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

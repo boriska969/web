@@ -1,0 +1,89 @@
+/* Основной контейнер */
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+
+/* Корпус калькулятора */
+.calc-container {
+  width: 320px;
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+/* Экран калькулятора */
+.screen {
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 10px;
+  min-height: 56px;
+  display: grid;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.screen span {
+  font-family: 'Orbitron', monospace;
+  font-size: 20px;
+  color: black;
+  word-break: break-all;
+}
+
+/* Группы кнопок */
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.digits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.other {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+/* Стили кнопок */
+.key {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  background: rgba(17, 102, 97, 0.3);
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.key:hover {
+  background: rgba(17, 102, 97, 0.7);
+}
+
+.key.result {
+  background: green;
+  border-color: gray;
+  color: white;
+}
+
+.key.result:hover {
+  background: rgba(17, 102, 97, 0.7);
+}
+
+.key.clear {
+  background: red;
+  border-color: gray;
+  color: white;
+}
+
+.key.clear:hover {
+  background: rgba(17, 102, 97, 0.7);
+}
