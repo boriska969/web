@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в систему - Аквапарк "Московский"</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=5">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <h1>Вход в систему</h1>
+        <form action="https://httpbin.org/post" method="POST">
+            <p>
+                <label for="username">Логин *</label>
+                <input type="text" id="username" name="username" required>
+            </p>
+
+            <p>
+                <label for="password">Пароль *</label>
+                <input type="password" id="password" name="password" required>
+            </p>
+
+            <p>
+                <input type="checkbox" name="remember">
+                Запомнить меня
+            </p>
+
+            <button type="submit">Войти</button>
+        </form>
+        
+        <div class="login-links">
+            <a href="index.html">Назад</a>
+        </div>
+    </div>
+</body>
+</html>
