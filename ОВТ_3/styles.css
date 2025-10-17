@@ -1,0 +1,205 @@
+* { 
+  box-sizing: border-box; 
+}
+
+body { 
+  margin: 0; 
+  font-family: 'Roboto';
+  color: rgb(50, 60, 79); 
+  background: rgba(211, 211, 211, 0.2); 
+}
+
+img { 
+  max-width: 100%; 
+}
+
+.container { 
+  max-width: 1100px; 
+  margin: 0 auto;
+}
+
+/*шапка и нави*/
+.header { 
+  background: rgb(33, 40, 52); 
+  color: white; 
+}
+
+.header__inner { 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  height: 60px; 
+  gap: 12px; 
+}
+
+.brand { 
+  color: white; 
+  text-decoration: none;
+  font-weight: 700; 
+  font-size: 20px; 
+}
+
+
+.nav__list { 
+  display: flex; 
+  gap: 8px; 
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+  flex-wrap: wrap; 
+}
+
+.nav__list a { 
+  color: white; 
+  text-decoration: none; 
+  padding: 10px 12px; 
+  border-radius: 8px; 
+  line-height: 1; 
+  display: inline-flex; 
+  align-items: center; 
+}
+
+.nav__list a:hover { 
+  background: rgb(50, 60, 79); 
+}
+
+/*на главной*/
+.hero { 
+  background: rgba(33, 40, 52, 0.9); 
+  color: white; 
+}
+
+.hero__inner { 
+  display: flex; 
+  align-items: center; 
+  gap: 30px; 
+  padding: 20px 0; 
+}
+
+.hero__text { 
+  flex: 1 1 55%; 
+}
+
+.hero__media { 
+  flex: 1 1 45%; 
+}
+
+.hero h1 { 
+  margin: 0 0 8px; 
+  font-size: 28px; 
+}
+
+.hero p { 
+  margin: 0; 
+  color: white; 
+}
+
+/* осовная сайдбар контент*/
+.layout { 
+  display: flex; 
+  gap: 16px; 
+  padding: 16px 0; 
+}
+
+.sidebar { 
+  flex: 0 0 280px; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 16px; 
+}
+
+.content { 
+  flex: 1 1 auto; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 16px; 
+}
+
+.plain { 
+  list-style: none; 
+  padding: 0; 
+  margin: 6px 0 0; 
+}
+
+.sidebar__box { 
+  background: white; 
+  border: 1px solid gray; 
+  border-radius: 8px; 
+  padding: 20px; 
+}
+
+/* контент*/
+.card, .mini-card { 
+  background: white; 
+  border: 1px solid gray; 
+  border-radius: 8px; 
+  padding: 14px; 
+}
+
+.card h2, .mini-card h3 { 
+  margin: 0 0 10px; 
+  font-size: 20px; 
+}
+
+.card p, .mini-card p { 
+  margin: 0 0 10px; 
+}
+
+.mini-card h3 { 
+  font-size: 16px; 
+  margin: 0 0 6px; 
+}
+
+.mini-card { 
+  background: rgba(211, 211, 211, 0.2); 
+  padding: 12px; 
+}
+
+.mini-card p { 
+  color: rgba(33, 40, 52, 0.9); 
+  margin: 0; 
+}
+
+/*таблицы*/
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  margin: 10px 0; 
+}
+
+td { 
+  padding: 8px; 
+  border-bottom: 1px solid lightgray; 
+}
+
+/* карточки*/
+.cards { 
+  display: flex; 
+  gap: 12px; 
+  flex-wrap: wrap; 
+}
+
+.mini-card { 
+  flex: 1 1 280px; 
+}
+
+/* футеер*/
+.footer { 
+  border-top: 1px solid lightgray; 
+  background: white; 
+  margin-top: 10px;
+  display: flex; 
+  padding: 10px; 
+}
+
+@media (max-width: 900px) {
+  .hero__inner { 
+    flex-direction: column; 
+  }
+  .layout { 
+    flex-direction: column; 
+  }
+  .sidebar { 
+    flex-basis: auto; 
+  }
+}
